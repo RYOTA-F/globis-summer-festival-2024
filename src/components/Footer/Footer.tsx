@@ -8,7 +8,7 @@ export function Footer() {
       className="flex justify-center items-center bg-footer text-white py-4"
       aria-label={ARIA_LABEL}
     >
-      <p>&copy; {SITE.COPY}</p>
+      <p className="text-xs">&copy; {SITE.COPY}</p>
     </footer>
   )
 }
