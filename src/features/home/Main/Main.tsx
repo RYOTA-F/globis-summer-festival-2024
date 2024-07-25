@@ -6,7 +6,7 @@ export const ARIA_LABEL = 'main' as const
 export function Main() {
   return (
     <section
-      className="h-full w-full flex items-center justify-center bg-main text-white font-serif"
+      className="h-full w-full flex items-center justify-center bg-main text-white font-serif select-none"
       aria-label={ARIA_LABEL}
     >
       <div>
