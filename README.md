@@ -1,18 +1,46 @@
 # GLOBIS 夏祭り 2024
 
+## Description
+
+GLOBIS夏祭り2024の特設ページです。
+
+![GLOBIS夏祭り2024](./public/summer_festival_2024.jpeg)
+
+## Setup
+
+### Clone
+
+```zsh
+% git clone https://github.com/RYOTA-F/globis-summer-festival-2024.git
+% cd globis-summer-festival-2024
+```
+
+### npm install
+
+```zsh
+% npm ci
+```
+
 ## Run
 
-```
-% pnpm i
-% pnpm dev
+### Run dev
+
+```zsh
+% npm run dev
 ```
 
 ## Dev
 
 ### Storybook
 
+```zsh
+% npm run story
 ```
-% pnpm story
+
+### Vitest
+
+```zsh
+% npm run test
 ```
 
 ## Versions
