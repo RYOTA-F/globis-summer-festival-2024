@@ -37,3 +37,4 @@ next-env.d.ts
 
 # Github
 .commit
+*storybook.log
