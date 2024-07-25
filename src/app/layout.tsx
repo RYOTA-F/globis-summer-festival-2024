@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { SITE } from '@/constants/global'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'GLOBIS夏祭り2024',
-  description: '『GLOBIS 夏祭り2024』の特設ページです',
+  title: SITE.TITLE,
+  description: `『${SITE.TITLE}』の特設ページです`,
 }
 
 export default function RootLayout({
