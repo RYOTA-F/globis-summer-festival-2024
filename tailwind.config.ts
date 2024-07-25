@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         t: '#333333',
+        footer: '#5e6c77',
       },
     },
   },
