@@ -7,6 +7,14 @@
 % pnpm dev
 ```
 
+## Dev
+
+### Storybook
+
+```
+% pnpm story
+```
+
 ## Versions
 
 ### Node.js
