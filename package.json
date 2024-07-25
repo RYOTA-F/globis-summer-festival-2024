@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write src/**/*.{tsx,ts,json,md}",
     "story": "storybook dev -p 6006",
-    "test": "vitest"
+    "test": "vitest --ui"
   },
   "dependencies": {
     "next": "14.2.5",
@@ -32,6 +32,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/ui": "^2.0.4",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "eslint-plugin-storybook": "^0.8.0",
