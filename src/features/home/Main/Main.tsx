@@ -3,7 +3,7 @@ import { TEXT } from '../../../constants/text'
 
 export const ARIA_LABEL = 'main' as const
 
-export function Main() {
+export function MainSection() {
   return (
     <section
       className="h-[calc(100vh-64px)] w-[100vw] flex items-center justify-center bg-main text-white font-serif select-none"

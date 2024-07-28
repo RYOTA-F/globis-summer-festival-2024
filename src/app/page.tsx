@@ -1,11 +1,11 @@
-import { Main } from '../features/home/Main/Main'
-import { Access } from '../features/home/Access/Access'
+import { MainSection } from '../features/home/Main/Main'
+import { AccessSecion } from '../features/home/Access/Access'
 
 export default function Home() {
   return (
     <main>
-      <Main />
-      <Access />
+      <MainSection />
+      <AccessSecion />
     </main>
   )
 }
