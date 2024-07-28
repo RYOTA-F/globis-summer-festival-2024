@@ -1,9 +1,11 @@
 import { Main } from '../features/home/Main/Main'
+import { Access } from '../features/home/Access/Access'
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-center h-[calc(100vh-112px)]">
+    <main>
       <Main />
+      <Access />
     </main>
   )
 }
