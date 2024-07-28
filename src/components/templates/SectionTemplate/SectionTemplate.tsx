@@ -15,12 +15,12 @@ export function SectionTemplate({
   children,
   title,
   subTitle,
-  height = '100vh',
+  height = 'h-[100vh]',
   backgroundColor = '#888888',
 }: SectionTemplateProps) {
   return (
     <section
-      className={`flex justify-center items-center ${height}  bg-[${backgroundColor}] p-[5%]`}
+      className={`flex justify-center items-center ${height}  bg-[${backgroundColor}] p-[5%] border-[0.5px] border-t-gray-100 `}
       aria-label={ARIA_LABEL}
     >
       <div className="w-full h-full text-center">
