@@ -1,13 +1,14 @@
 import { SectionTemplate } from '../../../components/templates/SectionTemplate/SectionTemplate'
 import { ContentItem } from '../../../components/ContentItem/ContentItem'
-import { CONTENTS } from '../../../constants/contents'
+import { CONTENTS, MAIN, SUB } from '../../../constants/contents'
 import { Label } from '../../../components/elements/Label/Label'
 
 export const ARIA_LABEL = 'contents' as const
 
 export function ContentsSection() {
-  const mainContents = CONTENTS.filter((content) => content.type === 'main')
-  const subContents = CONTENTS.filter((content) => content.type === 'sub')
+  const mainContents = CONTENTS.filter((content) => content.type === MAIN)
+  const subContents = CONTENTS.filter((content) => content.type === SUB)
+
   return (
     <SectionTemplate
       title="コンテンツ"
