@@ -6,7 +6,7 @@ export function AriaMapSection() {
   return (
     <SectionTemplate
       title="会場マップ"
-      subTitle="AriaMap"
+      subTitle="ARIA MAP"
       backgroundColor="bg-bmask"
       ariaLabel={ARIA_LABEL}
     >
