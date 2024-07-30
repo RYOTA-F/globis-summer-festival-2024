@@ -6,14 +6,17 @@ export function AriaMapSection() {
   return (
     <SectionTemplate
       title="会場マップ"
-      subTitle="AriaMap"
-      aria-label={ARIA_LABEL}
+      subTitle="ARIA MAP"
+      backgroundColor="bg-bmask"
+      ariaLabel={ARIA_LABEL}
     >
-      <img
-        src="/aria_map.png"
-        alt="会場マップ"
-        className="mt-[-160px] h-[80%]"
-      />
+      <div className="w-full h-full relative">
+        <img
+          src="/aria_map.png"
+          alt="会場マップ"
+          className="absolute inset-0 object-contain w-full h-full"
+        />
+      </div>
     </SectionTemplate>
   )
 }

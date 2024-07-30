@@ -13,6 +13,7 @@ const config: Config = {
       colors: {
         t: '#333333',
         tsub: '#7b7b7b',
+        bmask: '#e9edfb',
         footer: '#5e6c77',
         main: '#1748c6',
       },
