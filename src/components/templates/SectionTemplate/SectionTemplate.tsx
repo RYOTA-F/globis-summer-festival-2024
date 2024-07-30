@@ -17,18 +17,20 @@ export function SectionTemplate({
   title,
   subTitle,
   height = 'h-[100vh]',
-  backgroundColor = '#888888',
+  backgroundColor = 'bg-[#fff]',
   ariaLabel = ARIA_LABEL,
 }: SectionTemplateProps) {
   return (
     <section
-      className={`flex justify-center items-center ${height}  bg-[${backgroundColor}] p-[5%] pt-[3%] border-t-[0.5px] border-t-gray-100 `}
+      className={`flex justify-center items-center ${height} ${backgroundColor} p-[5%] pt-[3%] border-t-[0.5px] border-t-gray-100 `}
       aria-label={ariaLabel}
     >
-      <div className="w-full h-full text-center">
+      <div className="w-full h-full flex flex-col text-center">
         {subTitle && <H3>{subTitle}</H3>}
         <H2>{title}</H2>
-        <div className="flex justify-center items-center mt-10">{children}</div>
+        <div className="h-full flex flex-grow justify-center items-center mt-10">
+          {children}
+        </div>
       </div>
     </section>
   )
