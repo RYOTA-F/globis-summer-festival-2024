@@ -7,7 +7,7 @@ export function AriaMapSection() {
     <SectionTemplate
       title="会場マップ"
       subTitle="AriaMap"
-      aria-label={ARIA_LABEL}
+      ariaLabel={ARIA_LABEL}
     >
       <img
         src="/aria_map.png"
