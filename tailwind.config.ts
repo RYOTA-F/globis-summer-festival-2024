@@ -16,6 +16,7 @@ const config: Config = {
         bmask: '#e9edfb',
         footer: '#5e6c77',
         main: '#1748c6',
+        sub: '#dbd394',
       },
     },
   },
