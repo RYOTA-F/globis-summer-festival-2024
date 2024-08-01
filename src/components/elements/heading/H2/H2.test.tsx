@@ -1,10 +1,10 @@
 import { describe, test, expect, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { MainSection, ARIA_LABEL } from './Main'
+import { H2, ARIA_LABEL } from './H2'
 
-describe('MainSection', () => {
+describe('', () => {
   beforeEach(() => {
-    render(<MainSection />)
+    render(<H2>H2</H2>)
   })
 
   test('描画される', () => {
