@@ -1,12 +1,12 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { AccessSecion } from './Access'
+import { AccessSection } from './Access'
 
-const meta: Meta<typeof AccessSecion> = {
-  component: AccessSecion,
+const meta: Meta<typeof AccessSection> = {
+  component: AccessSection,
 }
 export default meta
 
-type Story = StoryObj<typeof AccessSecion>
+type Story = StoryObj<typeof AccessSection>
 
 export const Default: Story = {
   args: {},
