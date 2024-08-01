@@ -11,8 +11,8 @@ export default function Home() {
       <MainSection />
       <AboutSection />
       <InformationSection />
-      <ContentsSection />
       <AriaMapSection />
+      <ContentsSection />
       <AccessSection />
     </main>
   )

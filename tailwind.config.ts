@@ -14,6 +14,7 @@ const config: Config = {
         t: '#333333',
         tsub: '#7b7b7b',
         bmask: '#e9edfb',
+        ymask: '#fdf9d9',
         footer: '#5e6c77',
         main: '#1748c6',
         sub: '#dbd394',

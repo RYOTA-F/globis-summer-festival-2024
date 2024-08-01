@@ -13,6 +13,7 @@ export function AccessSection() {
       title="アクセス"
       subTitle="ACCESS"
       height="auto"
+      backgroundColor="bg-ymask"
       ariaLabel={ARIA_LABEL}
     >
       <div className="w-[80%]">
