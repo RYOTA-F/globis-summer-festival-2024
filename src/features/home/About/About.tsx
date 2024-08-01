@@ -25,14 +25,7 @@ export function AboutSection() {
             <H4 fontSize="text-3xl">夏の終わりと出会いの始まり</H4>
             <H4>〜はじける青春〜</H4>
             <p className="text-t text-base mt-4">
-              GLOBIS生に関わる誰もが楽しめる夏祭りイベントを開催します！！
-            </p>
-            <p className="text-t text-base">その名も「GLOBIS夏祭り2024」！！</p>
-            <p className="text-t text-base">
-              キャッチコピーは、『夏の終わりと出会いの始まり〜はじける青春〜』ということで、
-            </p>
-            <p className="text-t text-base">
-              大人の青春をみんなで楽しみましょう！！
+              GLOBIS生に関わる誰もが楽しめる夏祭りイベントを開催します！！その名も「GLOBIS夏祭り2024」！！キャッチコピーは、『夏の終わりと出会いの始まり〜はじける青春〜』ということで、大人の青春をみんなで楽しみましょう！！
             </p>
           </div>
         </div>
