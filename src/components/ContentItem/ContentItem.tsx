@@ -29,7 +29,7 @@ export function ContentItem({ content }: ContentItemProps) {
         <img
           src={content.image}
           alt={content.image}
-          className="h-auto w-auto"
+          className="h-auto w-auto rounded-lg shadow-lg"
         />
       </div>
     </div>
