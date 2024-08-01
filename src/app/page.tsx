@@ -1,19 +1,9 @@
-import { MainSection } from '../features/home/Main/Main'
-import { AboutSection } from '../features/home/About/About'
-import { InformationSection } from '../features/home/Information/Information'
-import { ContentsSection } from '../features/home/Contents/Contents'
-import { AriaMapSection } from '../features/home/AriaMap/AriaMap'
-import { AccessSection } from '../features/home/Access/Access'
+import { Main } from '../features/home/Main/Main'
 
 export default function Home() {
   return (
-    <main>
-      <MainSection />
-      <AboutSection />
-      <InformationSection />
-      <AriaMapSection />
-      <ContentsSection />
-      <AccessSection />
+    <main className="flex items-center justify-center h-[calc(100vh-112px)]">
+      <Main />
     </main>
   )
 }
