@@ -7,7 +7,7 @@ import { ZOOM } from '../../../constants/google'
 
 export const ARIA_LABEL = 'access' as const
 
-export function AccessSecion() {
+export function AccessSection() {
   return (
     <SectionTemplate
       title="アクセス"
