@@ -6,14 +6,34 @@ export const ARIA_LABEL = 'main' as const
 export function MainSection() {
   return (
     <section
-      className="h-[calc(100vh-64px)] w-[100vw] flex flex-col mb-10"
+      className="h-[calc(100vh-64px)] w-[100vw] flex items-center justify-center bg-main text-white font-serif select-none"
       aria-label={ARIA_LABEL}
     >
-      <img src="/summer_festival_2024.jpeg" className="w-full" />
-      <div className="bg-sub h-[100px]" />
-      <div className="bg-sub flex-grow relative">
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-full h-[200%] bg-white rounded-[50%]"></div>
+      <div>
+        <h1 className="text-3xl font-bold">
+          <p className="text-center">
+            {SITE.GLOBIS}
+            {SITE.SUMMER_FESTIVAL}
+          </p>
+          <p className="text-center">{SITE.YEAR_2024}</p>
+        </h1>
+        <h2 className="flex justify-center mt-3 text-xl">
+          {TEXT.SPECIAL_PAGE}
+        </h2>
       </div>
+      <p className="flex justify-center mt-5 text-lg absolute bottom-40">
+        {TEXT.COMMING_SOON}
+      </p>
     </section>
+    // <section
+    //   className="h-[calc(100vh-64px)] w-[100vw] flex flex-col mb-10"
+    //   aria-label={ARIA_LABEL}
+    // >
+    //   <img src="/summer_festival_2024.jpeg" className="w-full" />
+    //   <div className="bg-sub h-[100px]" />
+    //   <div className="bg-sub flex-grow relative">
+    //     <div className="absolute left-1/2 transform -translate-x-1/2 w-full h-[200%] bg-white rounded-[50%]"></div>
+    //   </div>
+    // </section>
   )
 }
