@@ -3,12 +3,17 @@ import { H3 } from '../../../components/elements/heading/H3/H3'
 import { Label } from '../../../components/elements/Label/Label'
 import { INFORMATION } from '../../../constants/information'
 import { KASAI_LINKAI_PARK } from '../../../constants/place'
+import { SECTION_ID } from '../../../constants/section'
 
 export const ARIA_LABEL = 'information-section' as const
 
 export function InformationSection() {
   return (
-    <section className="bg-white pt-10 pb-20" aria-label={ARIA_LABEL}>
+    <section
+      id={SECTION_ID.INFORMATION}
+      className="bg-white pt-10 pb-20"
+      aria-label={ARIA_LABEL}
+    >
       <div className="container mx-auto px-4">
         <div
           className="grid grid-cols-2 items-center"

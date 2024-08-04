@@ -5,23 +5,27 @@ interface SectionTemplateProps {
   children: React.ReactNode
   title: string
   subTitle?: string
+  id?: string
   height?: string
   backgroundColor?: string
   ariaLabel?: string
 }
 
 export const ARIA_LABEL = 'sectionTemplate' as const
+export const ID = 'section-template' as const
 
 export function SectionTemplate({
   children,
   title,
   subTitle,
+  id = ID,
   height = 'h-[100vh]',
   backgroundColor = 'bg-[#fff]',
   ariaLabel = ARIA_LABEL,
 }: SectionTemplateProps) {
   return (
     <section
+      id={id}
       className={`flex justify-center items-center ${height} ${backgroundColor} p-[5%] pt-[3%] border-t-[0.5px] border-t-gray-100 `}
       aria-label={ariaLabel}
     >

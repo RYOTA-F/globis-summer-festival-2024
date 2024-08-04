@@ -1,10 +1,12 @@
 import { SectionTemplate } from '../../../components/templates/SectionTemplate/SectionTemplate'
+import { SECTION_ID } from '../../../constants/section'
 
 export const ARIA_LABEL = 'aria-map' as const
 
 export function AriaMapSection() {
   return (
     <SectionTemplate
+      id={SECTION_ID.ARIA_MAP}
       title="会場マップ"
       subTitle="ARIA MAP"
       backgroundColor="bg-ymask"
