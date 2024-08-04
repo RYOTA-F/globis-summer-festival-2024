@@ -8,7 +8,7 @@ export const ARIA_LABEL = 'information-section' as const
 
 export function InformationSection() {
   return (
-    <section className="bg-white py-20" aria-label={ARIA_LABEL}>
+    <section className="bg-white pt-10 pb-20" aria-label={ARIA_LABEL}>
       <div className="container mx-auto px-4">
         <div
           className="grid grid-cols-2 items-center"

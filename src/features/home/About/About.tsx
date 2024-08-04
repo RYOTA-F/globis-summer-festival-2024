@@ -6,7 +6,7 @@ export const ARIA_LABEL = 'about-section' as const
 
 export function AboutSection() {
   return (
-    <section className="bg-white py-20" aria-label={ARIA_LABEL}>
+    <section className="bg-white py-10" aria-label={ARIA_LABEL}>
       <div className="container mx-auto px-4">
         <div
           className="grid grid-cols-2 items-center gap-16"
