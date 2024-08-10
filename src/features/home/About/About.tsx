@@ -1,12 +1,17 @@
 import { H2 } from '../../../components/elements/heading/H2/H2'
 import { H3 } from '../../../components/elements/heading/H3/H3'
 import { H4 } from '../../../components/elements/heading/H4/H4'
+import { SECTION_ID } from '../../../constants/section'
 
 export const ARIA_LABEL = 'about-section' as const
 
 export function AboutSection() {
   return (
-    <section className="bg-white py-20" aria-label={ARIA_LABEL}>
+    <section
+      id={SECTION_ID.ABOUT}
+      className="bg-white py-10"
+      aria-label={ARIA_LABEL}
+    >
       <div className="container mx-auto px-4">
         <div
           className="grid grid-cols-2 items-center gap-16"

@@ -3,19 +3,24 @@ import { H3 } from '../../../components/elements/heading/H3/H3'
 import { Label } from '../../../components/elements/Label/Label'
 import { INFORMATION } from '../../../constants/information'
 import { KASAI_LINKAI_PARK } from '../../../constants/place'
+import { SECTION_ID } from '../../../constants/section'
 
 export const ARIA_LABEL = 'information-section' as const
 
 export function InformationSection() {
   return (
-    <section className="bg-white py-20" aria-label={ARIA_LABEL}>
+    <section
+      id={SECTION_ID.INFORMATION}
+      className="bg-white pt-10 pb-20"
+      aria-label={ARIA_LABEL}
+    >
       <div className="container mx-auto px-4">
         <div
           className="grid grid-cols-2 items-center"
           style={{ gridTemplateColumns: '4fr 3fr' }}
         >
           <div className="w-full">
-            <H3>Information</H3>
+            <H3>INFORMATION</H3>
             <H2>イベント情報</H2>
             <div className="grid grid-cols-10 gap-4 p-3 pl-10 ">
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">

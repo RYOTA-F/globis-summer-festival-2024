@@ -2,6 +2,7 @@ import { SectionTemplate } from '../../../components/templates/SectionTemplate/S
 import { ContentItem } from '../../../components/ContentItem/ContentItem'
 import { CONTENTS, MAIN, SUB } from '../../../constants/contents'
 import { Label } from '../../../components/elements/Label/Label'
+import { SECTION_ID } from '../../../constants/section'
 
 export const ARIA_LABEL = 'contents' as const
 
@@ -11,6 +12,7 @@ export function ContentsSection() {
 
   return (
     <SectionTemplate
+      id={SECTION_ID.CONTENTS}
       title="コンテンツ"
       subTitle="CONTENTS"
       height="auto"

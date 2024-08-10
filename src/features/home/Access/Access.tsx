@@ -3,6 +3,7 @@ import { SectionTemplate } from '../../../components/templates/SectionTemplate/S
 import { Label } from '../../../components/elements/Label/Label'
 import { ENV } from '../../../constants/env'
 import { KASAI_LINKAI_PARK } from '../../../constants/place'
+import { SECTION_ID } from '../../../constants/section'
 import { ZOOM } from '../../../constants/google'
 
 export const ARIA_LABEL = 'access' as const
@@ -12,8 +13,8 @@ export function AccessSection() {
     <SectionTemplate
       title="アクセス"
       subTitle="ACCESS"
+      id={SECTION_ID.ACCESS}
       height="auto"
-      backgroundColor="bg-ymask"
       ariaLabel={ARIA_LABEL}
     >
       <div className="w-[80%]">
