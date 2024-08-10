@@ -15,7 +15,6 @@ export function AccessSection() {
       subTitle="ACCESS"
       id={SECTION_ID.ACCESS}
       height="auto"
-      backgroundColor="bg-ymask"
       ariaLabel={ARIA_LABEL}
     >
       <div className="w-[80%]">

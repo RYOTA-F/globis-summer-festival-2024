@@ -20,7 +20,7 @@ export function InformationSection() {
           style={{ gridTemplateColumns: '4fr 3fr' }}
         >
           <div className="w-full">
-            <H3>Information</H3>
+            <H3>INFORMATION</H3>
             <H2>イベント情報</H2>
             <div className="grid grid-cols-10 gap-4 p-3 pl-10 ">
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">

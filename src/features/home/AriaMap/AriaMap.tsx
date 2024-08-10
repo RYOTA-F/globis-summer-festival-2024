@@ -9,7 +9,6 @@ export function AriaMapSection() {
       id={SECTION_ID.ARIA_MAP}
       title="会場マップ"
       subTitle="ARIA MAP"
-      backgroundColor="bg-ymask"
       ariaLabel={ARIA_LABEL}
     >
       <div className="w-full h-full relative">
