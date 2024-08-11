@@ -12,7 +12,8 @@ export default function Home() {
       <AboutSection />
       <InformationSection />
       <AriaMapSection />
-      <ContentsSection />
+      {/* TODO: コンテンツ */}
+      {/* <ContentsSection /> */}
       <AccessSection />
     </main>
   )

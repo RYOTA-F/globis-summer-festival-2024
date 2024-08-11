@@ -14,15 +14,12 @@ export function InformationSection() {
       className="bg-white pt-10 pb-20"
       aria-label={ARIA_LABEL}
     >
-      <div className="container mx-auto px-4">
-        <div
-          className="grid grid-cols-2 items-center"
-          style={{ gridTemplateColumns: '4fr 3fr' }}
-        >
+      <div className="container mx-auto">
+        <div className="grid grid-cols-[4fr,3fr] items-center">
           <div className="w-full">
             <H3>INFORMATION</H3>
             <H2>イベント情報</H2>
-            <div className="grid grid-cols-10 gap-4 p-3 pl-10 ">
+            <div className="grid grid-cols-10 gap-4 p-3 pl-4">
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
                 <Label>開催日</Label>
               </div>
