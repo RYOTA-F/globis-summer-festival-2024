@@ -16,7 +16,10 @@ export function RouteSection() {
     >
       <div className="grid grid-cols-2 gap-10">
         {ROUTES.map((route) => (
-          <div className="col-span-1 flex flex-col items-center  [&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]">
+          <div
+            key={route.NUMBER}
+            className="col-span-1 flex flex-col items-center  [&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]"
+          >
             <Label color="bg-blue-500">{route.NUMBER}</Label>
             <p className="mt-5">{route.MESSAGE}</p>
             <img src={route.SRC} className="mt-10 rounded-2xl" />
