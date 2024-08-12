@@ -7,7 +7,7 @@ import { AccessSection } from '../features/home/Access/Access'
 
 export default function Home() {
   return (
-    <main>
+    <>
       <MainSection />
       <AboutSection />
       <InformationSection />
@@ -15,6 +15,6 @@ export default function Home() {
       {/* TODO: コンテンツ */}
       {/* <ContentsSection /> */}
       <AccessSection />
-    </main>
+    </>
   )
 }
