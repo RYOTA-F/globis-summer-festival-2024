@@ -1,9 +1,11 @@
 import { AccessSection } from '../../features/home/Access/Access'
+import { RouteSection } from '../../features/access/Route/Route'
 
 export default function AccessPage() {
   return (
     <>
-      <h1>アクセス</h1>
+      <AccessSection isLinkButton={false} />
+      <RouteSection />
     </>
   )
 }

@@ -5,10 +5,15 @@ import { ENV } from '../../../constants/env'
 import { KASAI_LINKAI_PARK } from '../../../constants/place'
 import { SECTION_ID } from '../../../constants/section'
 import { ZOOM } from '../../../constants/google'
+import { Button } from '../../../components/elements/Button/Button'
 
 export const ARIA_LABEL = 'access' as const
 
-export function AccessSection() {
+export interface AccessSectionProps {
+  isLinkButton?: boolean
+}
+
+export function AccessSection({ isLinkButton = true }: AccessSectionProps) {
   return (
     <SectionTemplate
       title="アクセス"
@@ -52,6 +57,13 @@ export function AccessSection() {
               {KASAI_LINKAI_PARK.ACCESS.TOZAI}
             </div>
           </div>
+          {isLinkButton && (
+            <div className="mt-10">
+              <Button href={`/access#${SECTION_ID.ROUTE}`}>
+                詳しくはこちら
+              </Button>
+            </div>
+          )}
         </div>
         <div className="h-[50vh]">
           <GoogleMap
