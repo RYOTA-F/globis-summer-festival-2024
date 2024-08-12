@@ -4,4 +4,5 @@ export const SECTION_ID = {
   ARIA_MAP: 'aria-map',
   CONTENTS: 'contents',
   ACCESS: 'access',
+  ROUTE: 'route',
 } as const
