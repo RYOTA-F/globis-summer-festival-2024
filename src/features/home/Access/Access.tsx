@@ -23,7 +23,7 @@ export function AccessSection({ isLinkButton = true }: AccessSectionProps) {
       ariaLabel={ARIA_LABEL}
     >
       <div className="grid grid-cols-[5fr,5fr]">
-        <div className="pt-10">
+        <div className={isLinkButton ? 'pt-10' : 'pt-[80px]'}>
           <div className="text-2xl font-bold leading-loose mb-5">
             {KASAI_LINKAI_PARK.NAME}
           </div>
@@ -59,9 +59,7 @@ export function AccessSection({ isLinkButton = true }: AccessSectionProps) {
           </div>
           {isLinkButton && (
             <div className="mt-10">
-              <Button href={`/access#${SECTION_ID.ROUTE}`}>
-                詳しくはこちら
-              </Button>
+              <Button href={`/access`}>詳しくはこちら</Button>
             </div>
           )}
         </div>
