@@ -12,10 +12,10 @@ export const NAVIGATION = [
     URL: `${HOME_URL}${SECTION_ID.INFORMATION}`,
     NAME: 'INFORMATION',
   },
-  {
-    URL: `${HOME_URL}${SECTION_ID.ARIA_MAP}`,
-    NAME: 'ARIA MAP',
-  },
+  // {
+  //   URL: `${HOME_URL}${SECTION_ID.ARIA_MAP}`,
+  //   NAME: 'ARIA MAP',
+  // },
   // {
   //   URL: `${HOME_URL}${SECTION_ID.CONTENTS}`,
   //   NAME: 'CONTENTS',

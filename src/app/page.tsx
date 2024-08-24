@@ -11,10 +11,11 @@ export default function Home() {
       <MainSection />
       <AboutSection />
       <InformationSection />
+      {/* TODO: 会場マップ */}
       {/* <AriaMapSection /> */}
       {/* TODO: コンテンツ */}
       {/* <ContentsSection /> */}
-      {/* <AccessSection /> */}
+      <AccessSection />
     </>
   )
 }
