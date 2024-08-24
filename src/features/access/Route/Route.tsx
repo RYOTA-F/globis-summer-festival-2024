@@ -21,8 +21,8 @@ export function RouteSection() {
             className="col-span-1 flex flex-col items-center  [&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]"
           >
             <Label color="bg-blue-500">{route.NUMBER}</Label>
-            <p className="mt-5">{route.MESSAGE}</p>
-            <img src={route.SRC} className="mt-10 rounded-2xl" />
+            <img src={route.SRC} className="mt-3 rounded-2xl" />
+            <p className="mt-5 flex items-center flex-grow">{route.MESSAGE}</p>
           </div>
         ))}
       </div>
