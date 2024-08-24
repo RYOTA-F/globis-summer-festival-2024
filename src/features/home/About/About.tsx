@@ -9,7 +9,7 @@ export function AboutSection() {
   return (
     <section
       id={SECTION_ID.ABOUT}
-      className="bg-white py-10"
+      className="bg-white py-10 mt-10"
       aria-label={ARIA_LABEL}
     >
       <div className="container mx-auto px-4">
@@ -19,7 +19,7 @@ export function AboutSection() {
         >
           <div className="flex items-center justify-center w-full h-full">
             <img
-              src="/about.webp"
+              src="/home/about.png"
               alt="GLOBIS Summer Festival"
               className="w-full h-auto rounded-lg shadow-lg"
             />

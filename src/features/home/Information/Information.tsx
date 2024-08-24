@@ -40,15 +40,11 @@ export function InformationSection() {
                 <Label>対象</Label>
               </div>
               <div className="col-span-8 text-left">{INFORMATION.TARGET}</div>
-              <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-                <Label>金額</Label>
-              </div>
-              <div className="col-span-8 text-left">{INFORMATION.AMOUNT}</div>
             </div>
           </div>
           <div className="flex items-center justify-center w-full h-full">
             <img
-              src="/information.webp"
+              src="/home/information.png"
               alt="GLOBIS Summer Festival"
               className="w-full h-auto rounded-lg shadow-lg"
             />

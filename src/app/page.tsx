@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <MainSection />
-      {/* <AboutSection /> */}
-      {/* <InformationSection /> */}
+      <AboutSection />
+      <InformationSection />
       {/* <AriaMapSection /> */}
       {/* TODO: コンテンツ */}
       {/* <ContentsSection /> */}
