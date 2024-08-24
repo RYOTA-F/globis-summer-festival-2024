@@ -12,7 +12,7 @@ export function Header() {
         <a href="/">
           <Icon src="/logo.png" width={260} height={50} />
         </a>
-        <nav className="flex justify-end items-center w-full h-full text-blue-600 font-semibold tracking-widest ">
+        <nav className="hidden md:flex justify-end items-center w-full h-full text-blue-600 font-semibold tracking-widest ">
           {NAVIGATION.map((nav) => (
             <a
               key={nav.NAME}

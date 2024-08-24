@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <>
       <MainSection />
-      <AboutSection />
-      <InformationSection />
-      <AriaMapSection />
+      {/* <AboutSection /> */}
+      {/* <InformationSection /> */}
+      {/* <AriaMapSection /> */}
       {/* TODO: コンテンツ */}
       {/* <ContentsSection /> */}
-      <AccessSection />
+      {/* <AccessSection /> */}
     </>
   )
 }
