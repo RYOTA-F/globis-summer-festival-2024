@@ -21,7 +21,7 @@ export function AboutSection() {
               className="w-full h-auto rounded-lg shadow-lg mt-5 md:mt-0"
             />
           </div>
-          <div className="text-center sm:text-left w-full">
+          <div className="text-center md:text-left w-full">
             <H3>ABOUT</H3>
             <H2>GLOBIS夏祭りとは</H2>
             <H4>夏の終わりと出会いの始まり</H4>

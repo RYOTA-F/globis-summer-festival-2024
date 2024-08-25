@@ -16,7 +16,7 @@ export function InformationSection() {
     >
       <div className="container mx-auto">
         <div className="md:grid md:grid-cols-[3fr,4fr] items-center md:gap-16 px-4">
-          <div className="text-center sm:text-left w-full px-4">
+          <div className="text-center md:text-left w-full px-4">
             <H3>INFORMATION</H3>
             <H2>イベント情報</H2>
             <div className="grid grid-cols-10 gap-4 md:p-3 mt-5 mb:mt-0">
