@@ -14,11 +14,11 @@ export function RouteSection() {
       height="auto"
       ariaLabel={ARIA_LABEL}
     >
-      <div className="grid grid-cols-2 gap-10">
+      <div className="sm:grid sm:grid-cols-2 sm:gap-10">
         {ROUTES.map((route) => (
           <div
             key={route.NUMBER}
-            className="col-span-1 flex flex-col items-center  [&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]"
+            className="col-span-1 flex flex-col items-center mt-5 sm:mt-0 [&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]"
           >
             <Label color="bg-blue-500">{route.NUMBER}</Label>
             <img src={route.SRC} className="mt-3 rounded-2xl" />
