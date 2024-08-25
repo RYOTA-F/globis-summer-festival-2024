@@ -13,10 +13,7 @@ export function AboutSection() {
       aria-label={ARIA_LABEL}
     >
       <div className="container mx-auto px-4">
-        <div
-          className="md:grid md:grid-cols-2 items-center md:gap-16 flex flex-col-reverse md:flex-row"
-          style={{ gridTemplateColumns: '3fr 4fr' }}
-        >
+        <div className="md:grid md:grid-cols-[3fr,4fr] items-center md:gap-16 flex flex-col-reverse md:flex-row">
           <div className="flex items-center justify-center w-full h-full">
             <img
               src="/home/about.png"
@@ -30,7 +27,7 @@ export function AboutSection() {
             <H4>夏の終わりと出会いの始まり</H4>
             <H4>〜はじける青春〜</H4>
             <p className="text-t text-base mt-4">
-              GLOBIS生に関わる誰もが楽しめる夏祭りイベントを開催します！！その名も「GLOBIS夏祭り2024」！！キャッチコピーは、『夏の終わりと出会いの始まり〜はじける青春〜』ということで、大人の青春をみんなで楽しみましょう！！
+              GLOBIS生に関わる誰もが楽しめる夏祭りイベントを開催します！その名も「GLOBIS夏祭り2024」！キャッチコピーは、『夏の終わりと出会いの始まり〜はじける青春〜』ということで、大人の青春をみんなで楽しみましょう！
             </p>
           </div>
         </div>
