@@ -15,11 +15,11 @@ export function InformationSection() {
       aria-label={ARIA_LABEL}
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-[4fr,3fr] items-center">
-          <div className="w-full">
+        <div className="md:grid md:grid-cols-[3fr,4fr] items-center md:gap-16 px-4">
+          <div className="text-center sm:text-left w-full px-4">
             <H3>INFORMATION</H3>
             <H2>イベント情報</H2>
-            <div className="grid grid-cols-10 gap-4 p-3 pl-4">
+            <div className="grid grid-cols-10 gap-4 md:p-3 mt-5 mb:mt-0">
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
                 <Label>開催日</Label>
               </div>
@@ -40,17 +40,13 @@ export function InformationSection() {
                 <Label>対象</Label>
               </div>
               <div className="col-span-8 text-left">{INFORMATION.TARGET}</div>
-              <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-                <Label>金額</Label>
-              </div>
-              <div className="col-span-8 text-left">{INFORMATION.AMOUNT}</div>
             </div>
           </div>
           <div className="flex items-center justify-center w-full h-full">
             <img
-              src="/information.webp"
+              src="/home/information.png"
               alt="GLOBIS Summer Festival"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-auto rounded-lg shadow-lg mt-6 md:mt-0"
             />
           </div>
         </div>
