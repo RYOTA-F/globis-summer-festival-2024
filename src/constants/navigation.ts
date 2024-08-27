@@ -21,7 +21,7 @@ export const NAVIGATION = [
   //   NAME: 'CONTENTS',
   // },
   {
-    URL: `${HOME_URL}${SECTION_ID.ACCESS}`,
+    URL: `${ACCESS_URL}`,
     NAME: 'ACCESS',
   },
   {

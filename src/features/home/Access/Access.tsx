@@ -22,50 +22,48 @@ export function AccessSection({ isLinkButton = true }: AccessSectionProps) {
       height="auto"
       ariaLabel={ARIA_LABEL}
     >
-      <div className="grid grid-cols-[5fr,5fr]">
-        <div className="pt-10">
+      <div className="md:grid md:grid-cols-[5fr,5fr]">
+        <div className={isLinkButton ? 'md:pt-[80px]' : 'md:pt-[120px]'}>
           <div className="text-2xl font-bold leading-loose mb-5">
             {KASAI_LINKAI_PARK.NAME}
           </div>
-          <div className="grid grid-cols-10 gap-4 pl-10">
-            <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
+          <div className="grid grid-cols-10 gap-4 mb:pl-10">
+            <div className="col-span-3 sm:col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
               <Label>住所</Label>
             </div>
-            <div className="col-span-8 text-left pr-[30px]">
+            <div className="col-span-7 sm:col-span-8 text-left pr-[30px]">
               {KASAI_LINKAI_PARK.ADDRESS}
             </div>
-            <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
+            <div className="col-span-3 sm:col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
               <Label>URL</Label>
             </div>
             <a
               href={KASAI_LINKAI_PARK.URL}
               target="_blank"
-              className="col-span-8 text-left pr-[30px] underline"
+              className="col-span-7 sm:col-span-8 text-left pr-[30px] underline"
             >
               {KASAI_LINKAI_PARK.URL}
             </a>
-            <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
+            <div className="col-span-3 sm:col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
               <Label>アクセス 1</Label>
             </div>
-            <div className="col-span-8 text-left pr-[30px]">
+            <div className="col-span-7 sm:col-span-8 text-left pr-[30px]">
               {KASAI_LINKAI_PARK.ACCESS.KEIYO}
             </div>
-            <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
+            <div className="col-span-3 sm:col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
               <Label>アクセス 2</Label>
             </div>
-            <div className="col-span-8 text-left pr-[30px]">
+            <div className="col-span-7 sm:col-span-8 text-left pr-[30px]">
               {KASAI_LINKAI_PARK.ACCESS.TOZAI}
             </div>
           </div>
           {isLinkButton && (
-            <div className="mt-10">
-              <Button href={`/access#${SECTION_ID.ROUTE}`}>
-                詳しくはこちら
-              </Button>
+            <div className="mt-10 hidden md:block">
+              <Button href={`/access`}>詳しくはこちら</Button>
             </div>
           )}
         </div>
-        <div className="h-[50vh]">
+        <div className="h-[50vh] mt-10 mb:mt-0">
           <GoogleMap
             apiKey={ENV.GOOGLE_MAP_API_KEY}
             center={KASAI_LINKAI_PARK.COORDINATES}
@@ -73,6 +71,11 @@ export function AccessSection({ isLinkButton = true }: AccessSectionProps) {
             zoom={ZOOM}
           />
         </div>
+        {isLinkButton && (
+          <div className="mt-10 block md:hidden">
+            <Button href={`/access`}>詳しくはこちら</Button>
+          </div>
+        )}
       </div>
     </SectionTemplate>
   )

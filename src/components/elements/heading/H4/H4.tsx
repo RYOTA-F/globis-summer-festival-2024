@@ -8,7 +8,7 @@ export const ARIA_LABEL = 'H4' as const
 export function H4({ children, fontSize = 'text-2xl' }: H4Props) {
   return (
     <h4
-      className={`text-blue-500 font-bold select-none leading-relaxed  ${fontSize}`}
+      className={`text-blue-500 font-bold select-none leading-relaxed ${fontSize} sm:text-3xl`}
       aria-label={ARIA_LABEL}
     >
       {children}
