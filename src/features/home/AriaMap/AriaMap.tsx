@@ -32,7 +32,10 @@ export function AriaMapSection() {
         <div className="mt-8 flex justify-center">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-1 gap-y-2 pl-2">
             {tents.map((tent) => (
-              <div className="grid grid-cols-[auto_1fr] gap-y-2">
+              <div
+                key={tent.number}
+                className="grid grid-cols-[auto_1fr] gap-y-2"
+              >
                 <div className="[&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]">
                   <Label color="bg-blue-500">{tent.number}</Label>
                 </div>
@@ -42,7 +45,10 @@ export function AriaMapSection() {
               </div>
             ))}
             {between.map((bt) => (
-              <div className="grid grid-cols-[auto_1fr] gap-y-2">
+              <div
+                key={bt.number}
+                className="grid grid-cols-[auto_1fr] gap-y-2"
+              >
                 <div className="[&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]">
                   <Label color="bg-blue-300">{bt.number}</Label>
                 </div>
