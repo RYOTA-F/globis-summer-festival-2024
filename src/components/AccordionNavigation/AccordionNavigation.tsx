@@ -1,17 +1,26 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import { HamburgerMenu } from './HamburgerMenu/HamburgerMenu'
 import { AccordionMenu } from './AccordionMenu/AccordionMenu'
+import { GOOGLE_MAP_CONTAINE } from '../../constants/google'
 
 export const ARIA_LABEL = 'accordion-navigation' as const
 
 export function AccordionNavigation() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const onChangeIsOpen = () => {
-    setIsOpen(!isOpen)
-  }
+  /**
+   * Googleマップを強制的に非表示状態にする
+   */
+  const onChangeIsOpen = useCallback(() => {
+    setIsOpen((prevIsOpen) => !prevIsOpen)
+    const mapContainer = document.getElementById(GOOGLE_MAP_CONTAINE)
+    if (mapContainer) {
+      mapContainer.classList.toggle('pointer-events-none')
+      mapContainer.classList.toggle('hidden')
+    }
+  }, [])
 
   return (
     <div className="md:hidden" aria-label={ARIA_LABEL}>

@@ -4,7 +4,7 @@ import { TextLabel } from '../../../components/elements/TextLabel/TextLabel'
 import { ENV } from '../../../constants/env'
 import { KASAI_LINKAI_PARK } from '../../../constants/place'
 import { SECTION_ID } from '../../../constants/section'
-import { ZOOM } from '../../../constants/google'
+import { GOOGLE_MAP_CONTAINE, ZOOM } from '../../../constants/google'
 import { Button } from '../../../components/elements/Button/Button'
 
 export const ARIA_LABEL = 'access' as const
@@ -63,7 +63,7 @@ export function AccessSection({ isLinkButton = true }: AccessSectionProps) {
             </div>
           )}
         </div>
-        <div className="h-[50vh] mt-10 mb:mt-0">
+        <div className="h-[50vh] mt-10 mb:mt-0" id={GOOGLE_MAP_CONTAINE}>
           <GoogleMap
             apiKey={ENV.GOOGLE_MAP_API_KEY}
             center={KASAI_LINKAI_PARK.COORDINATES}
