@@ -14,7 +14,7 @@ export function Button({ children, href, color = 'bg-blue-500' }: ButtonProps) {
     >
       <a
         href={href}
-        className="inline-block px-10 py-3 w-full h-full text-center hover:text-blue-500 hover:bg-white transition duration-800 ease-in-out"
+        className="inline-block px-10 py-3 w-full h-full text-center hover:text-blue-500 hover:bg-white transition duration-500 ease-in-out"
       >
         {children}
       </a>

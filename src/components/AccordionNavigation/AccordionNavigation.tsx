@@ -13,13 +13,17 @@ export function AccordionNavigation() {
   /**
    * Googleマップを強制的に非表示状態にする
    */
-  const onChangeIsOpen = useCallback(() => {
-    setIsOpen((prevIsOpen) => !prevIsOpen)
+  const hiddenGoogleMapContainer = () => {
     const mapContainer = document.getElementById(GOOGLE_MAP_CONTAINE)
     if (mapContainer) {
       mapContainer.classList.toggle('pointer-events-none')
       mapContainer.classList.toggle('hidden')
     }
+  }
+
+  const onChangeIsOpen = useCallback(() => {
+    setIsOpen((prevIsOpen) => !prevIsOpen)
+    hiddenGoogleMapContainer()
   }, [])
 
   return (
