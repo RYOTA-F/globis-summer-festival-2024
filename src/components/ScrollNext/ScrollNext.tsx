@@ -28,7 +28,7 @@ export function ScrollNext() {
           style={{
             writingMode: 'vertical-rl',
             textOrientation: 'upright',
-            letterSpacing: '-0.3em',
+            letterSpacing: '-0.2em',
           }}
         >
           {'Scroll'.split('').map((char, i) => (
