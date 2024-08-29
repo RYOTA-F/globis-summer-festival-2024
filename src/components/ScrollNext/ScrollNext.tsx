@@ -5,7 +5,12 @@ export const ARIA_LABEL = 'scroll-next' as const
 
 export function ScrollNext() {
   return (
-    <a href={`#${SECTION_ID.ABOUT}`} id={SCROOL_NEXT} aria-label={ARIA_LABEL}>
+    <a
+      href={`#${SECTION_ID.ABOUT}`}
+      id={SCROOL_NEXT}
+      aria-label={ARIA_LABEL}
+      className="sm:hidden"
+    >
       <div className="flex items-end absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center select-none cursor-pointer z-50 animate-bounce">
         <svg
           className="w-6 h-6 text-white"
