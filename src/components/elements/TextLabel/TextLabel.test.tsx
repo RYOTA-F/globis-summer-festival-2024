@@ -1,10 +1,10 @@
 import { describe, test, expect, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { NumberLabel, ARIA_LABEL } from './NumberLabel'
+import { TextLabel, ARIA_LABEL } from './TextLabel'
 
-describe('NumberLabel', () => {
+describe('Label', () => {
   beforeEach(() => {
-    render(<NumberLabel>NumberLabel</NumberLabel>)
+    render(<TextLabel>Label</TextLabel>)
   })
 
   test('描画される', () => {

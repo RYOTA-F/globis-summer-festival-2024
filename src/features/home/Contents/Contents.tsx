@@ -1,7 +1,7 @@
 import { SectionTemplate } from '../../../components/templates/SectionTemplate/SectionTemplate'
 import { ContentItem } from '../../../components/ContentItem/ContentItem'
 import { CONTENTS, MAIN, SUB } from '../../../constants/contents'
-import { Label } from '../../../components/elements/Label/Label'
+import { Label } from '../../../components/elements/NumberLabel/NumberLabel'
 import { SECTION_ID } from '../../../constants/section'
 
 export const ARIA_LABEL = 'contents' as const

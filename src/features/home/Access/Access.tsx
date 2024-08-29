@@ -1,6 +1,6 @@
 import { GoogleMap } from '../../../components/elements/GoogleMap/GoogleMap'
 import { SectionTemplate } from '../../../components/templates/SectionTemplate/SectionTemplate'
-import { Label } from '../../../components/elements/Label/Label'
+import { TextLabel } from '../../../components/elements/TextLabel/TextLabel'
 import { ENV } from '../../../constants/env'
 import { KASAI_LINKAI_PARK } from '../../../constants/place'
 import { SECTION_ID } from '../../../constants/section'
@@ -29,13 +29,13 @@ export function AccessSection({ isLinkButton = true }: AccessSectionProps) {
           </div>
           <div className="grid grid-cols-10 gap-4 mb:pl-10">
             <div className="col-span-3 sm:col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-              <Label>住所</Label>
+              <TextLabel>住所</TextLabel>
             </div>
             <div className="col-span-7 sm:col-span-8 text-left pr-[30px]">
               {KASAI_LINKAI_PARK.ADDRESS}
             </div>
             <div className="col-span-3 sm:col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-              <Label>URL</Label>
+              <TextLabel>URL</TextLabel>
             </div>
             <a
               href={KASAI_LINKAI_PARK.URL}
@@ -45,13 +45,13 @@ export function AccessSection({ isLinkButton = true }: AccessSectionProps) {
               {KASAI_LINKAI_PARK.URL}
             </a>
             <div className="col-span-3 sm:col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-              <Label>アクセス 1</Label>
+              <TextLabel>アクセス 1</TextLabel>
             </div>
             <div className="col-span-7 sm:col-span-8 text-left pr-[30px]">
               {KASAI_LINKAI_PARK.ACCESS.KEIYO}
             </div>
             <div className="col-span-3 sm:col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-              <Label>アクセス 2</Label>
+              <TextLabel>アクセス 2</TextLabel>
             </div>
             <div className="col-span-7 sm:col-span-8 text-left pr-[30px]">
               {KASAI_LINKAI_PARK.ACCESS.TOZAI}

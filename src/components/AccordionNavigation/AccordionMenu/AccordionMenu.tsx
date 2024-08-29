@@ -10,7 +10,7 @@ export interface AccordionMenuProps {
 export function AccordionMenu({ isOpen, onClick }: AccordionMenuProps) {
   return (
     <nav
-      className={`fixed top-12 w-screen bg-main transition-all duration-500 overflow-y-auto h-[calc(100vh-48px)] flex items-center justify-center ${
+      className={`fixed top-12 w-screen bg-blue-400 transition-all duration-500 overflow-y-auto h-[calc(100vh-48px)] flex items-center justify-center ${
         isOpen ? 'right-0' : '-right-[120%]'
       }`}
       aria-label={ARIA_LABEL}
@@ -21,7 +21,7 @@ export function AccordionMenu({ isOpen, onClick }: AccordionMenuProps) {
             <li key={nav.URL} className="w-full text-2xl font-bold">
               <a
                 href={nav.URL}
-                className="flex justify-center items-center text-white leading-[3] transition-all duration-300 hover:bg-[#f7f7f7] hover:text-main hover:pl-4 border-b border-white w-full"
+                className="flex justify-center items-center text-white leading-[3] transition-all duration-300 hover:bg-[#f7f7f7] hover:text-blue-400 hover:pl-4 border-b border-white w-full"
                 onClick={onClick}
               >
                 {nav.NAME}
