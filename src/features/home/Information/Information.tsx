@@ -1,6 +1,6 @@
 import { H2 } from '../../../components/elements/heading/H2/H2'
 import { H3 } from '../../../components/elements/heading/H3/H3'
-import { Label } from '../../../components/elements/Label/Label'
+import { TextLabel } from '../../../components/elements/TextLabel/TextLabel'
 import { INFORMATION } from '../../../constants/information'
 import { KASAI_LINKAI_PARK } from '../../../constants/place'
 import { SECTION_ID } from '../../../constants/section'
@@ -21,23 +21,23 @@ export function InformationSection() {
             <H2>イベント情報</H2>
             <div className="grid grid-cols-10 gap-4 md:p-3 mt-5 mb:mt-0">
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-                <Label>開催日</Label>
+                <TextLabel>日程</TextLabel>
               </div>
               <div className="col-span-8 text-left">{INFORMATION.DATE}</div>
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-                <Label>開催時間</Label>
+                <TextLabel>時間</TextLabel>
               </div>
               <div className="col-span-8 text-left">
                 {INFORMATION.OPEN_TIME}
               </div>
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-                <Label>開催場所</Label>
+                <TextLabel>場所</TextLabel>
               </div>
               <div className="col-span-8 text-left">
                 {KASAI_LINKAI_PARK.NAME}
               </div>
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-                <Label>対象</Label>
+                <TextLabel>対象</TextLabel>
               </div>
               <div className="col-span-8 text-left">{INFORMATION.TARGET}</div>
             </div>

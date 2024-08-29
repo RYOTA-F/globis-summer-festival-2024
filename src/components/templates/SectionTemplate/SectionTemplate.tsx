@@ -26,7 +26,7 @@ export function SectionTemplate({
   return (
     <section
       id={id}
-      className={`flex justify-center items-center ${height} ${backgroundColor} p-[5%] pt-[3%]`}
+      className={`flex justify-center items-center ${height} ${backgroundColor} p-[5%] pt-[3%] scroll-mt-[60px]`}
       aria-label={ariaLabel}
     >
       <div className="w-full h-full flex flex-col text-center">
