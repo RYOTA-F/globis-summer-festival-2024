@@ -1,18 +1,18 @@
-export const ARIA_LABEL = 'label' as const
+export const ARIA_LABEL = 'number-label' as const
 
-export interface LabelProps {
+export interface NumberLabelProps {
   children: React.ReactNode
   color?: string
   py?: string
   px?: string
 }
 
-export function Label({
+export function NumberLabel({
   children,
   color = 'bg-blue-300',
   py = 'py-1',
   px = 'px-1',
-}: LabelProps) {
+}: NumberLabelProps) {
   return (
     <label
       className={`text-white text-sm select-none ${color} ${py} ${px} rounded-full`}

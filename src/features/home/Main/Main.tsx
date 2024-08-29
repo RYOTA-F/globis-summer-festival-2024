@@ -1,3 +1,5 @@
+import { ScrollNext } from '../../../components/ScrollNext/ScrollNext'
+
 export const ARIA_LABEL = 'main' as const
 
 export function MainSection() {
@@ -13,6 +15,7 @@ export function MainSection() {
           className="w-full h-full object-cover object-bottom"
         />
       </div>
+      <ScrollNext />
     </section>
   )
 }

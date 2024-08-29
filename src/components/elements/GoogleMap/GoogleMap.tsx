@@ -1,7 +1,7 @@
 'use client'
 
 import { GoogleMap as GMap, LoadScript, Marker } from '@react-google-maps/api'
-import { CONTAINER_STYLE, ZOOM } from '../../../constants/google'
+import { CONTAINER_STYLE } from '../../../constants/google'
 
 interface Position {
   lat: number

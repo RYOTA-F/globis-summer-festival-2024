@@ -20,6 +20,10 @@ const config: Config = {
         main: '#1748c6',
         sub: '#dbd394',
       },
+      fontFamily: {
+        serif: ['"Times New Roman"', 'serif'],
+        sans: ['"Helvetica"', '"Arial"', 'sans-serif'],
+      },
     },
   },
   plugins: [],
