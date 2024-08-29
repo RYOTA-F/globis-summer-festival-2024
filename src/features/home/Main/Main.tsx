@@ -1,29 +1,21 @@
-import { SITE } from '../../../constants/global'
-import { TEXT } from '../../../constants/text'
+import { ScrollNext } from '../../../components/ScrollNext/ScrollNext'
 
 export const ARIA_LABEL = 'main' as const
 
-export function Main() {
+export function MainSection() {
   return (
-    <section
-      className="h-full w-full flex items-center justify-center bg-main text-white font-serif select-none"
-      aria-label={ARIA_LABEL}
-    >
-      <div>
-        <h1 className="text-3xl font-bold">
-          <p className="text-center">
-            {SITE.GLOBIS}
-            {SITE.SUMMER_FESTIVAL}
-          </p>
-          <p className="text-center">{SITE.YEAR_2024}</p>
-        </h1>
-        <h2 className="flex justify-center mt-3 text-xl">
-          {TEXT.SPECIAL_PAGE}
-        </h2>
+    <section className="flex flex-col" aria-label={ARIA_LABEL}>
+      <img
+        src="/home/main.png"
+        className="hidden sm:block object-contain md:object-cover lg:w-full lg:h-full"
+      />
+      <div className="h-[calc(100vh-50px)] block sm:hidden">
+        <img
+          src="/home/main_sp.jpg"
+          className="w-full h-full object-cover object-bottom"
+        />
       </div>
-      <p className="flex justify-center mt-5 text-lg absolute bottom-40">
-        {TEXT.COMMING_SOON}
-      </p>
+      <ScrollNext />
     </section>
   )
 }
