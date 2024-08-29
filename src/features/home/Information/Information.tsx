@@ -21,17 +21,17 @@ export function InformationSection() {
             <H2>イベント情報</H2>
             <div className="grid grid-cols-10 gap-4 md:p-3 mt-5 mb:mt-0">
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-                <Label>開催日</Label>
+                <Label>日程</Label>
               </div>
               <div className="col-span-8 text-left">{INFORMATION.DATE}</div>
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-                <Label>開催時間</Label>
+                <Label>時間</Label>
               </div>
               <div className="col-span-8 text-left">
                 {INFORMATION.OPEN_TIME}
               </div>
               <div className="col-span-2 text-center w-full [&>label]:block [&>label]:w-full">
-                <Label>開催場所</Label>
+                <Label>場所</Label>
               </div>
               <div className="col-span-8 text-left">
                 {KASAI_LINKAI_PARK.NAME}

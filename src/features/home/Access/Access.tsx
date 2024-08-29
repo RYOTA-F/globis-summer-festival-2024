@@ -22,7 +22,7 @@ export function AccessSection({ isLinkButton = true }: AccessSectionProps) {
       height="auto"
       ariaLabel={ARIA_LABEL}
     >
-      <div className="md:grid md:grid-cols-[5fr,5fr]">
+      <div className="md:grid md:grid-cols-[5fr,5fr] mb-10">
         <div className={isLinkButton ? 'md:pt-[80px]' : 'md:pt-[120px]'}>
           <div className="text-2xl font-bold leading-loose mb-5">
             {KASAI_LINKAI_PARK.NAME}
