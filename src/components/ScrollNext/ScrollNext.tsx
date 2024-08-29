@@ -11,7 +11,8 @@ export function ScrollNext() {
       aria-label={ARIA_LABEL}
       className="sm:hidden"
     >
-      <div className="flex items-end absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center select-none cursor-pointer z-50 animate-bounce">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center select-none cursor-pointer animate-bounce">
+        <div className="text-white -translate-x-[10px]">Scroll</div>
         <svg
           className="w-6 h-6 text-white"
           fill="none"
@@ -23,20 +24,6 @@ export function ScrollNext() {
         >
           <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
-        <div
-          className="text-white"
-          style={{
-            writingMode: 'vertical-rl',
-            textOrientation: 'upright',
-            letterSpacing: '-0.2em',
-          }}
-        >
-          {'Scroll'.split('').map((char, i) => (
-            <span key={i} className="inline-block">
-              {char}
-            </span>
-          ))}
-        </div>
       </div>
     </a>
   )
