@@ -33,7 +33,7 @@ export const HEADER_NAVIGATION = [
 export const ACCORDION_NAVIGATION = [
   {
     URL: `${HOME_URL}${SECTION_ID.ABOUT}`,
-    NAME: 'イベント概要',
+    NAME: 'GLOBIS夏祭りとは',
   },
   {
     URL: `${HOME_URL}${SECTION_ID.INFORMATION}`,
