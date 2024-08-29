@@ -1,6 +1,6 @@
 import { describe, test, expect, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { Label, ARIA_LABEL } from './Label'
+import { Label, ARIA_LABEL } from './NumberLabel'
 
 describe('Label', () => {
   beforeEach(() => {

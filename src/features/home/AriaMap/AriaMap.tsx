@@ -1,4 +1,4 @@
-import { Label } from '../../../components/elements/Label/Label'
+import { NumberLabel } from '../../../components/elements/NumberLabel/NumberLabel'
 import { SectionTemplate } from '../../../components/templates/SectionTemplate/SectionTemplate'
 import {
   ARIA_MAP,
@@ -37,7 +37,7 @@ export function AriaMapSection() {
                 className="grid grid-cols-[auto_1fr] gap-y-2"
               >
                 <div className="[&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]">
-                  <Label color="bg-blue-500">{tent.number}</Label>
+                  <NumberLabel color="bg-blue-500">{tent.number}</NumberLabel>
                 </div>
                 <div className="pl-2 text-left font-bold leading-[30px]">
                   {tent.name}
@@ -50,7 +50,7 @@ export function AriaMapSection() {
                 className="grid grid-cols-[auto_1fr] gap-y-2"
               >
                 <div className="[&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]">
-                  <Label color="bg-blue-300">{bt.number}</Label>
+                  <NumberLabel color="bg-blue-300">{bt.number}</NumberLabel>
                 </div>
                 <div className="pl-2 text-left font-bold leading-[30px]">
                   {bt.name}
