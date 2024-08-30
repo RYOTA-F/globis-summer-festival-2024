@@ -11,7 +11,7 @@ export const ARIA_LABEL = 'aria-map' as const
 
 export function AriaMapSection() {
   const tents = ARIA_MAP.filter((map) => map.type === TYPE_TENT)
-  const between = ARIA_MAP.filter((map) => map.type === TYPE_BETWEEN_TENT)
+  // const between = ARIA_MAP.filter((map) => map.type === TYPE_BETWEEN_TENT)
 
   return (
     <SectionTemplate
@@ -44,7 +44,7 @@ export function AriaMapSection() {
                 </div>
               </div>
             ))}
-            {between.map((bt) => (
+            {/* {between.map((bt) => (
               <div
                 key={bt.number}
                 className="grid grid-cols-[auto_1fr] gap-y-2"
@@ -56,7 +56,7 @@ export function AriaMapSection() {
                   {bt.name}
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

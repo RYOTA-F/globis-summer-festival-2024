@@ -17,6 +17,13 @@ export default function RootLayout({
   return (
     <html lang="ja" className="scroll-smooth">
       <head>
+        <meta property="og:title" content={SITE.TITLE} />
+        <meta property="og:description" content={SITE.DESCRIPTION} />
+        <meta property="og:image" content="/home/main.png" />
+        <meta
+          property="og:url"
+          content="https://globis-summer-festival-2024.vercel.app/"
+        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="font-serif">

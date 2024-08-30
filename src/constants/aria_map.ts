@@ -42,19 +42,19 @@ export const ARIA_MAP = [
     name: '肉(グリル)',
     type: TYPE_TENT,
   },
-  {
-    number: 'a',
-    name: '輪投げ&コーンホール',
-    type: TYPE_BETWEEN_TENT,
-  },
-  {
-    number: 'b',
-    name: 'スーパーボール',
-    type: TYPE_BETWEEN_TENT,
-  },
-  {
-    number: 'c',
-    name: 'ヨーヨー',
-    type: TYPE_BETWEEN_TENT,
-  },
+  // {
+  //   number: 'a',
+  //   name: '輪投げ&コーンホール',
+  //   type: TYPE_BETWEEN_TENT,
+  // },
+  // {
+  //   number: 'b',
+  //   name: 'スーパーボール',
+  //   type: TYPE_BETWEEN_TENT,
+  // },
+  // {
+  //   number: 'c',
+  //   name: 'ヨーヨー',
+  //   type: TYPE_BETWEEN_TENT,
+  // },
 ] as const
