@@ -15,6 +15,8 @@ const config: Config = {
         tsub: '#7b7b7b',
         bmask: '#e9edfb',
         ymask: '#fdf9d9',
+        ymain: '#ffde59',
+        rmain: '#ff3130',
         w70: 'rgba(255, 255, 255, 0.7)',
         footer: '#5e6c77',
         main: '#1748c6',
