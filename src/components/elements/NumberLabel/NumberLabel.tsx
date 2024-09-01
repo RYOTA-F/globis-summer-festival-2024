@@ -10,8 +10,8 @@ export interface NumberLabelProps {
 
 export function NumberLabel({
   children,
-  bg = 'text-white',
-  color = 'bg-blue-300',
+  bg = 'bg-blue-300',
+  color = 'text-white',
   py = 'py-1',
   px = 'px-1',
 }: NumberLabelProps) {

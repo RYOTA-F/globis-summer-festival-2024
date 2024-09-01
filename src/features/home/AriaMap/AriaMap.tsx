@@ -52,10 +52,8 @@ export function AriaMapSection() {
                   key={bt.number}
                   className="grid grid-cols-[auto_1fr] gap-y-2"
                 >
-                  <div className="[&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:font-bold [&>label]:leading-[22px]">
-                    <NumberLabel bg="bg-[#ffde59]" color="text-[#ff3130]">
-                      {bt.number}
-                    </NumberLabel>
+                  <div className="[&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:text-rmain [&>label]:bg-ymain [&>label]:font-bold [&>label]:leading-[22px]">
+                    <NumberLabel>{bt.number}</NumberLabel>
                   </div>
                   <div className="pl-2 text-left font-bold leading-[30px]">
                     {bt.name}
