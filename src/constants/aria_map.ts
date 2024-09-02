@@ -54,7 +54,7 @@ export const ARIA_MAP = [
   },
   {
     number: 'C',
-    name: 'クローク',
+    name: 'クローク、うちわ',
     type: TYPE_BETWEEN_TENT,
   },
 ] as const
