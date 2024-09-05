@@ -1,13 +1,12 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { AriaMapSection } from './AriaMap'
-import { Children } from 'react'
+import { AreaMapSection } from './AreaMap'
 
-const meta: Meta<typeof AriaMapSection> = {
-  component: AriaMapSection,
+const meta: Meta<typeof AreaMapSection> = {
+  component: AreaMapSection,
 }
 export default meta
 
-type Story = StoryObj<typeof AriaMapSection>
+type Story = StoryObj<typeof AreaMapSection>
 
 export const Default: Story = {
   args: {
