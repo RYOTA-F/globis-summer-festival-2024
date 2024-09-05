@@ -1,7 +1,8 @@
 export const SECTION_ID = {
   ABOUT: 'about',
   INFORMATION: 'information',
-  ARIA_MAP: 'aria-map',
+  AREA_MAP: 'area-map',
+  SCHEDULE: 'schedule',
   CONTENTS: 'contents',
   ACCESS: 'access',
   ROUTE: 'route',
