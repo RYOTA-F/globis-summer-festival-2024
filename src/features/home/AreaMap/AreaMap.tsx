@@ -15,7 +15,7 @@ export function AreaMapSection() {
 
   return (
     <SectionTemplate
-      id={SECTION_ID.ARIA_MAP}
+      id={SECTION_ID.AREA_MAP}
       title="会場マップ"
       subTitle="AREA MAP"
       ariaLabel={ARIA_LABEL}
