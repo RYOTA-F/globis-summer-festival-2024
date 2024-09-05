@@ -1,10 +1,10 @@
 # GLOBIS 夏祭り 2024
 
+![GLOBIS夏祭り2024](./public/home/main.png)
+
 ## Description
 
 GLOBIS夏祭り2024の特設ページです
-
-![GLOBIS夏祭り2024](./public/summer_festival_2024.jpeg)
 
 ## Setup
 
