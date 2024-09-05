@@ -13,8 +13,12 @@ export const HEADER_NAVIGATION = [
     NAME: 'INFORMATION',
   },
   {
-    URL: `${HOME_URL}${SECTION_ID.ARIA_MAP}`,
+    URL: `${HOME_URL}${SECTION_ID.AREA_MAP}`,
     NAME: 'AREA MAP',
+  },
+  {
+    URL: `${HOME_URL}${SECTION_ID.SCHEDULE}`,
+    NAME: 'SCHEDULE',
   },
   // {
   //   URL: `${HOME_URL}${SECTION_ID.CONTENTS}`,
@@ -40,8 +44,12 @@ export const ACCORDION_NAVIGATION = [
     NAME: 'イベント情報',
   },
   {
-    URL: `${HOME_URL}${SECTION_ID.ARIA_MAP}`,
+    URL: `${HOME_URL}${SECTION_ID.AREA_MAP}`,
     NAME: '会場マップ',
+  },
+  {
+    URL: `${HOME_URL}${SECTION_ID.SCHEDULE}`,
+    NAME: 'タイムスケジュール',
   },
   // {
   //   URL: `${HOME_URL}${SECTION_ID.CONTENTS}`,
