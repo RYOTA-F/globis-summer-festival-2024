@@ -2,7 +2,7 @@ import { MainSection } from '../features/home/Main/Main'
 import { AboutSection } from '../features/home/About/About'
 import { InformationSection } from '../features/home/Information/Information'
 // import { ContentsSection } from '../features/home/Contents/Contents'
-import { AriaMapSection } from '../features/home/AriaMap/AriaMap'
+import { AreaMapSection } from '../features/home/AreaMap/AreaMap'
 import { AccessSection } from '../features/home/Access/Access'
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <MainSection />
       <AboutSection />
       <InformationSection />
-      <AriaMapSection />
+      <AreaMapSection />
       {/* TODO: コンテンツ */}
       {/* <ContentsSection /> */}
       <AccessSection />
