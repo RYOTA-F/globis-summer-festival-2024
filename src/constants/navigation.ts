@@ -14,7 +14,7 @@ export const HEADER_NAVIGATION = [
   },
   {
     URL: `${HOME_URL}${SECTION_ID.ARIA_MAP}`,
-    NAME: 'ARIA MAP',
+    NAME: 'AREA MAP',
   },
   // {
   //   URL: `${HOME_URL}${SECTION_ID.CONTENTS}`,

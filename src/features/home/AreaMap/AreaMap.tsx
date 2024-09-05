@@ -9,7 +9,7 @@ import { SECTION_ID } from '../../../constants/section'
 
 export const ARIA_LABEL = 'aria-map' as const
 
-export function AriaMapSection() {
+export function AreaMapSection() {
   const tents = ARIA_MAP.filter((map) => map.type === TYPE_TENT)
   const between = ARIA_MAP.filter((map) => map.type === TYPE_BETWEEN_TENT)
 
@@ -17,7 +17,7 @@ export function AriaMapSection() {
     <SectionTemplate
       id={SECTION_ID.ARIA_MAP}
       title="会場マップ"
-      subTitle="ARIA MAP"
+      subTitle="AREA MAP"
       ariaLabel={ARIA_LABEL}
       height="auto"
     >
