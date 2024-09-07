@@ -40,7 +40,7 @@ export function AreaMapSection() {
                   <div className="[&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:leading-[22px]">
                     <NumberLabel color="bg-blue-500">{tent.number}</NumberLabel>
                   </div>
-                  <div className="pl-2 text-left font-bold leading-[30px]">
+                  <div className="pl-2 text-left font-bold leading-[30px] whitespace-pre-line">
                     {tent.name}
                   </div>
                 </div>
@@ -55,7 +55,7 @@ export function AreaMapSection() {
                   <div className="[&>label]:block [&>label]:w-[30px] [&>label]:h-[30px] [&>label]:text-rmain [&>label]:bg-ymain [&>label]:font-bold [&>label]:leading-[22px]">
                     <NumberLabel>{bt.number}</NumberLabel>
                   </div>
-                  <div className="pl-2 text-left font-bold leading-[30px]">
+                  <div className="pl-2 text-left font-bold leading-[30px] whitespace-pre-line">
                     {bt.name}
                   </div>
                 </div>
