@@ -24,37 +24,37 @@ export const ARIA_MAP = [
   },
   {
     number: 5,
-    name: '野菜',
-    type: TYPE_TENT,
-  },
-  {
-    number: 6,
-    name: '主食',
-    type: TYPE_TENT,
-  },
-  {
-    number: 7,
     name: 'シーフード',
     type: TYPE_TENT,
   },
   {
-    number: 8,
+    number: 6,
+    name: '野菜',
+    type: TYPE_TENT,
+  },
+  {
+    number: 7,
     name: 'お肉',
     type: TYPE_TENT,
   },
   {
+    number: 8,
+    name: '主食',
+    type: TYPE_TENT,
+  },
+  {
     number: 'A',
-    name: '輪投げ&コーンホール',
+    name: '輪投げ &\nコーンホール',
     type: TYPE_BETWEEN_TENT,
   },
   {
     number: 'B',
-    name: 'ヨーヨー&スーパーボール',
+    name: 'ヨーヨー &\nスーパーボール',
     type: TYPE_BETWEEN_TENT,
   },
   {
     number: 'C',
-    name: 'クローク、うちわ',
+    name: 'クローク &\nうちわ',
     type: TYPE_BETWEEN_TENT,
   },
 ] as const
